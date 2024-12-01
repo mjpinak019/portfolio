@@ -1,0 +1,109 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Century Gothic, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .profile-image {
+    width: 150px;  /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+    margin-top: 20px;
+  }
+
+  /* Add a smooth transition for expanding and collapsing sections */
+section div {
+  overflow: hidden;
+  max-height: 0;  /* Initially collapsed */
+  transition: max-height 0.5s ease-in-out;  /* Smooth transition */
+  padding: 0 20px;  /* Optional: Add some padding for the content */
+}
+
+/* Style for the section titles (h2) */
+section h2 {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #333; /* Default background color */
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* When a section is opened, change the background color */
+section h2:hover {
+  background-color: #555c5f; /* Color change on hover */
+}
+
+/* When section content is open, we allow it to expand */
+section .open {
+  display: block;
+}
+
+section div p {
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+  
+  
